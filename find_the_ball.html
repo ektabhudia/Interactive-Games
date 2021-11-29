@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Cup Game</title>
+    <link rel="stylesheet" type="text/css" href="game.css"  content="width=device-width, initial-scale=1.0">
+</head>
+<body >
+<div class="container" >
+<div id="game_of_cups" >
+    <div id="heading">
+       <h1 style="padding-left: 290px; color: rgb(92, 92, 255);">Find the ball under the cup </h1>
+    </div>
+    <div id="start_it">
+       <a id="start_game"></a>
+    </div>
+
+<button id="btnShow" type="button" class="btn btn-primary" style="margin-left: 450px;">Start The Game</button>
+<br>
+<br>
+
+<button id="play1" type="button" class="btn btn-warning" style="margin-left: 470px;">Play</button>
+
+<p id="message"></p>
+
+<div id="timer"></div>
+
+     <div id="main_arena">
+        <div id="cup1">
+            <img src="cup4.png" id="cup-o-1" alt="cup1"
+            height="200" width="150">
+        </div>
+        <div id="cup2">
+            <img src="cup4.png" id="cup-o-2" alt="cup2" 
+	height="200" width="150">
+        </div>
+        <div id="cup3">
+            <img src="cup4.png" id="cup-o-3" alt="cup3"
+            height="200" width="150">
+        </div>
+    </div>
+</div>
+
+</div>
+<figure id="ball" style="position:fixed;left:41.5%;bottom:1000px;opacity:0;z-index:1">
+<img src="ball1.png" alt="image">
+</fig>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="swap.js"></script>
+
+<script src="game.js"></script>
+</body>
+</html>
